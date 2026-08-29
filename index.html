@@ -40,6 +40,65 @@
               border: 0;
               border-top: 1px solid #d2d2d7;
           }
+
+          .download-grid {
+              display: grid;
+              grid-template-columns: repeat(2, minmax(0, 1fr));
+              gap: 20px;
+              margin-top: 20px;
+          }
+
+          .download-card {
+              padding: 24px;
+              text-align: center;
+              background: #fbfbfd;
+              border: 1px solid #d2d2d7;
+              border-radius: 16px;
+          }
+
+          .download-card h3 {
+              margin: 16px 0 6px;
+          }
+
+          .download-card p {
+              margin: 0 0 18px;
+              color: #6e6e73;
+          }
+
+          .qr-code {
+              display: block;
+              width: 160px;
+              height: 160px;
+              margin: auto;
+          }
+
+          .store-link {
+              display: inline-block;
+              padding: 10px 16px;
+              color: white;
+              background: #0071e3;
+              border-radius: 999px;
+              font-weight: 600;
+              text-decoration: none;
+          }
+
+          .store-link:hover {
+              background: #0077ed;
+          }
+
+          @media (max-width: 600px) {
+              body {
+                  padding: 20px 12px;
+              }
+
+              main {
+                  padding: 24px;
+              }
+
+              .download-grid {
+                  grid-template-columns: 1fr;
+              }
+          }
       </style>
   </head>
 
@@ -51,6 +110,77 @@
               Music Remote Control lets you control music playing on your Mac
               from your iPhone, iPad, widgets, and Live Activities.
           </p>
+
+          <section id="downloads">
+              <h2>Download the Apps</h2>
+
+              <p>
+                  Install the Mac app first, then download the free companion
+                  for your iPhone or iPad.
+              </p>
+
+              <div class="download-grid">
+                  <article class="download-card">
+                      <a
+                          href="https://apps.apple.com/app/music-remote-control/id6804891190"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                          <img
+                              class="qr-code"
+                              src="images/mac-app-qr.png"
+                              alt="QR code for Music Remote Control on the Mac App Store"
+                          >
+                      </a>
+
+                      <h3>Mac App</h3>
+
+                      <p>
+                          The required app for controlling Apple Music on your Mac.
+                      </p>
+
+                      <a
+                          class="store-link"
+                          href="https://apps.apple.com/app/music-remote-control/id6804891190"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                          View Mac App ↗
+                      </a>
+                  </article>
+
+                  <article class="download-card">
+                      <a
+                          href="https://apps.apple.com/us/app/music-remote-control-companion/id6804892112"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                          <img
+                              class="qr-code"
+                              src="images/ios-companion-qr.png"
+                              alt="QR code for the iPhone and iPad companion"
+                          >
+                      </a>
+
+                      <h3>iPhone &amp; iPad Companion</h3>
+
+                      <p>
+                          The free companion for controlling your Mac nearby.
+                      </p>
+
+                      <a
+                          class="store-link"
+                          href="https://apps.apple.com/us/app/music-remote-control-companion/id6804892112"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                      >
+                          View Companion App ↗
+                      </a>
+                  </article>
+              </div>
+          </section>
+
+          <hr class="divider">
 
           <h2>Getting Help</h2>
 
@@ -89,13 +219,13 @@
 
           <section id="faq">
               <h2>Frequently Asked Questions</h2>
-        
+
               <h3>Do I need to run the Mac app?</h3>
               <p>
                   Yes. Music Remote Control <strong>must</strong> be running on your Mac whenever
                   you use the iPhone or iPad app, Home Screen widget, or Live Activity.
               </p>
-        
+
               <h3>How do the different apps work?</h3>
               <ul>
                   <li>
@@ -115,7 +245,7 @@
                       Screens, Dynamic Island, and Apple Watch (iOS 18+ and watchOS 11+) views.
                   </li>
               </ul>
-        
+
               <h3>How do I connect my mobile device?</h3>
               <ol>
                   <li>Open Music Remote Control on the Mac.</li>
@@ -124,7 +254,7 @@
                   <li>Keep both devices nearby with Wi-Fi and Bluetooth enabled.</li>
                   <li>Wait for them to connect automatically. No pairing code is required.</li>
               </ol>
-        
+
               <h3>What can I control?</h3>
               <p>The available controls include:</p>
               <ul>
@@ -137,20 +267,20 @@
                   <li>AirPlay output selection</li>
                   <li>Individual volume for selected AirPlay devices</li>
               </ul>
-        
+
               <h3>What is Window Mode on Mac?</h3>
               <p>
                   Window Mode displays the Mac mini player with artwork, song information,
                   playback progress, transport controls, volume, and AirPlay controls.
                   Right-click the mini player to open the app menu.
               </p>
-        
+
               <h3>What does Pin do?</h3>
               <p>
                   Pin keeps the Mac mini player above windows. The setting is
                   remembered the next time the app opens.
               </p>
-        
+
               <h3>What is Menu Bar Mode?</h3>
               <p>
                   Menu Bar Mode hides the mini-player window and places compact Previous,
@@ -161,13 +291,13 @@
                   Click the song title and choose <strong>Switch to Window Mode</strong>
                   to restore the mini player.
               </p>
-        
+
               <h3>Why isn’t the Mac app in the Dock?</h3>
               <p>
                   Music Remote Control is designed as a menu-bar utility. Look for its
                   icon or the current song title in the macOS menu bar.
               </p>
-        
+
               <h3>What do the connection icons mean on iPhone/iPad?</h3>
               <ul>
                   <li>
@@ -186,7 +316,7 @@
                   </li>
               </ul>
               <p>Tap the status icon to display a written status message.</p>
-        
+
               <h3>Why is the artwork missing?</h3>
               <p>
                   Apple Music does not always make artwork available to other apps.
@@ -199,7 +329,7 @@
                   has failed. Playback controls and song information will continue to work
                   normally.
               </p>
-        
+
               <h3>How do I add the Home Screen widget on iOS?</h3>
               <ol>
                   <li>Touch and hold an empty area of the Home Screen.</li>
@@ -208,13 +338,13 @@
                   <li>Select the small or medium widget.</li>
                   <li>Add it to the Home Screen.</li>
               </ol>
-        
+
               <h3>Does the mobile app need to be open for the widget?</h3>
               <p>
                   The mobile app does not need to remain visible. However,
                   <strong>the Music Remote Control Mac app must be running</strong>.
               </p>
-        
+
               <h3>What does the Live Activity provide?</h3>
               <p>
                   After the mobile app connects to the Mac, the Live Activity provides
@@ -224,7 +354,7 @@
                   Apple Watch support is provided through the iPhone Live Activity. It is
                   not a separate Watch app.
               </p>
-        
+
               <h3>Why doesn’t the Live Activity appear?</h3>
               <ul>
                   <li>Confirm that the mobile app is connected to the Mac.</li>
@@ -232,7 +362,7 @@
                   <li>Enable Live Activities for Music Remote in iOS/watchOS Settings.</li>
                   <li>Confirm that the trial or Full Unlock is active.</li>
               </ul>
-        
+
               <h3>What does the AirPlay screen control?</h3>
               <p>
                   It controls AirPlay destinations available to Apple Music on the Mac.
@@ -243,7 +373,7 @@
                   destination is protected. Individual volume controls appear for
                   selected AirPlay outputs.
               </p>
-        
+
               <h3>Why is an AirPlay device missing?</h3>
               <ol>
                   <li>Confirm that the device appears in Apple Music on the Mac.</li>
@@ -251,7 +381,7 @@
                   <li>Confirm that the Mac and AirPlay device are on a compatible network.</li>
                   <li>Quit and reopen Apple Music if its AirPlay list appears stale.</li>
               </ol>
-        
+
               <h3>How does the free trial work?</h3>
               <p>
                   The Mac app provides a free 14-day trial of all remote-control features.
@@ -261,7 +391,7 @@
                   When the trial ends, purchase the one-time Full Unlock to continue using
                   the remote features. There is no subscription.
               </p>
-        
+
               <h3>Where do I purchase or restore access?</h3>
               <p>
                   Trial, purchase, and restoration options are available in the Mac app.
@@ -269,7 +399,7 @@
                   <strong>Restore Purchases</strong> if you previously purchased Full
                   Unlock with the same Apple Account.
               </p>
-        
+
               <h3>The mobile app cannot find my Mac</h3>
               <ul>
                   <li>
@@ -284,7 +414,7 @@
                       Music Remote Control.
                   </li>
               </ul>
-        
+
               <h3>The connection remains stuck</h3>
               <p>Restart both Music Remote apps in this order:</p>
               <ol>
@@ -299,7 +429,7 @@
                   <li>Wait a few seconds.</li>
                   <li>Reopen Music Remote on the iPhone or iPad.</li>
               </ol>
-        
+
               <h3>The apps connect, but the controls don’t work</h3>
               <ul>
                   <li>Confirm that Apple Music is open on the Mac.</li>
@@ -310,7 +440,7 @@
                   </li>
                   <li>Confirm that the mobile connection icon is green rather than orange.</li>
               </ul>
-        
+
               <h3>The widget does nothing</h3>
               <p>
                   Confirm that the Mac app is running, the devices are nearby, Local
@@ -318,14 +448,14 @@
                   is active. The widget may take several seconds to discover the Mac and
                   may not display an error if the Mac cannot be reached.
               </p>
-        
+
               <h3>Playback works, but artwork does not</h3>
               <p>
-                  Try playing a regular album track from your library. If that artwork appears, the
-                  connection is working correctly and the missing station artwork is due
+                  Try playing a regular album track from your library. If that artwork appears,
+                  the connection is working correctly and the missing station artwork is due
                   to the Apple Music API limitation described above.
               </p>
-        
+
               <h3>How to send a bug report or feature request?</h3>
               <p>
                   Feel free to contact me at:
