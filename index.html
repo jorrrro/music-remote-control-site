@@ -337,7 +337,8 @@
                   <li>Open the <strong>Playlists</strong> tab on your iPhone or iPad.</li>
                   <li>Select a playlist to view its songs.</li>
                   <li>
-                      Search the playlist or sort it by playlist order or song title.
+                      Search the playlist or sort it by playlist order, title, artist,
+                      album, or genre.
                   </li>
                   <li>
                       Tap the Play button beside a song to play it, or tap the plus
@@ -347,6 +348,34 @@
               <p>
                   Use <strong>Play Playlist</strong> in the playlist toolbar to play the
                   entire playlist.
+              </p>
+
+              <h3>How does playlist caching work?</h3>
+              <p>
+                  In the <strong>Playlists</strong> tab, tap <strong>Cache</strong> at the
+                  top right and enable <strong>Cache Playlists</strong>. This saves
+                  playlist names, folder structure, and song lists from playlists you
+                  open on this device for faster loading when you reopen the app.
+              </p>
+              <p>
+                  Artwork loads separately and is not saved to the cache. Caching does
+                  not download music for offline playback.
+              </p>
+              <p>
+                  After changing playlists or folders in Music on your Mac, pull down
+                  on the playlist list to update the saved information. To update the
+                  songs inside a playlist, open that playlist and pull down.
+              </p>
+
+              <h3>How does library caching work?</h3>
+              <p>
+                  In the <strong>Library</strong> tab, tap <strong>Cache</strong> at the
+                  top right and enable <strong>Cache Library</strong>. This saves your
+                  library’s song information on this device for faster loading.
+              </p>
+              <p>
+                  After changing your library in Music on your Mac, pull down on the
+                  Library page to update the saved information.
               </p>
 
               <h3>How does Up Next work?</h3>
@@ -401,6 +430,35 @@
               </p>
               <p>
                   For reliable operation, keep Music Remote Control running in the Mac menu bar.
+              </p>
+
+              </p>
+              <ol>
+                  <li>
+                      On your Mac, right-click the Music Remote Control mini player
+                      and select <strong>Home Automation</strong>. If you’re using
+                      Menu Bar Mode, click the song title in the macOS menu bar and
+                      select <strong>Home Automation</strong>.
+                  </li>
+                  <li>Copy the URL for the command you want.</li>
+                  <li>
+                      In the <strong>Home</strong> app, create an automation and
+                      choose its trigger.
+                  </li>
+                  <li>
+                      On the accessories and scenes screen, scroll down and select
+                      <strong>Convert to Shortcut</strong>.
+                  </li>
+                  <li>
+                      Add <strong>Get Contents of URL</strong>, paste the copied URL,
+                      and change the method to <strong>POST</strong>.
+                  </li>
+                  <li>Test the automation, then tap <strong>Done</strong>.</li>
+              </ol>
+              <p>
+                  Your Home hub sends the command to your Mac over the local network.
+                  Your Mac must be awake with Music Remote Control running, and your
+                  Home hub must be on the same network.
               </p>
 
               <h3>Why doesn’t Suggest Less appear immediately in Music.app?</h3>
@@ -591,13 +649,6 @@
                   Network access is enabled, Apple Music is available, and remote access
                   is active. The widget may take several seconds to discover the Mac and
                   may not display an error if the Mac cannot be reached.
-              </p>
-
-              <h3>Playback works, but artwork does not</h3>
-              <p>
-                  Try playing a regular album track from your library. If that artwork appears,
-                  the connection is working correctly and the missing station artwork is due
-                  to the Apple Music API limitation described above.
               </p>
 
               <h3>How to send a bug report or feature request?</h3>
